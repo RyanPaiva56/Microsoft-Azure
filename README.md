@@ -76,9 +76,9 @@ public function logout(Request $request)
 - ``name``
 - ``email``
 
-## Advanced usage
+## Multi-Tenant Compatibilty
 
-In order to have multiple / different Active directories on Azure (i.e. multiple tenants) The same driver can be used but with a different config:
+Specifying a Tenant ID will result in only allowing logings from the specified Tenant. In order to have multiple / different Active directories on Azure (i.e. multiple tenants), the same driver can be used but requires a different config:
 
 ```php
 /**
